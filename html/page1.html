@@ -1,0 +1,27 @@
+<div class="page1 pages">
+				<header class="header">
+					<div ng-click="cittyshow()">北京 <b></b></div><input type="text" ng-model="addarr" ng-focus="cinemas(1)"><div><img src="../img/1.png"> <span>筛选</span></div>
+				</header>
+				<div class="main">
+					<div class="scroll">
+						<div class="banner">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><img src="../img/1.jpg" alt="嗨喽美女"></li>
+								<li class="swiper-slide"><img src="../img/2.jpg" alt="嗨喽丑女"></li>
+								<li class="swiper-slide"><img src="../img/3.jpg" alt="嗨喽帅哥"></li>
+								<li class="swiper-slide"><img src="../img/4.jpg" alt="嗨喽SB"></li>
+							</ul>
+							 <div class="swiper-pagination"></div>
+						</div>
+						<ul>
+							<li class="move_item" ng-repeat="x in cinemalis">
+								<h5 class="itemh">{{x.cinemaName}}</h5>	
+								<p class="itemp1">{{x.cinemaAdd}}<span>5.4km</span></p>
+								<p class="itemp2"><span><img src="../img/h1.png">ATMOS</span></p>
+								<img src="../img/h.png" class="itemimg">
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>

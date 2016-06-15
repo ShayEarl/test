@@ -1,0 +1,44 @@
+		<div class="page" ui-view="page">
+			</div>
+		</div>
+		<div class="footer" ui-view="footer">
+			
+		</div>
+		<div class="dialog" ng-show="showss[0]" ng-class="showss[2]" ng-click="sdsd()">
+			<div class="cinema" ng-show="showss[1]" >
+				<div class="lefts">
+					<p ng-class="arrclass[0]" ng-click="bg(1,0);$event.stopPropagation();">区域</p>
+					<p ng-class="arrclass[1]" ng-click="bg(1,1);$event.stopPropagation();">品牌</p>
+					<p ng-class="arrclass[2]" ng-click="bg(1,2);$event.stopPropagation();">特效</p>
+				</div>
+				<div class="rights">
+				<div ng-show="arr[0]">
+					<p ng-repeat="x in datas.regionInfo" ng-click="add(x.regionName)">{{x.regionName}}</p>
+				</div>
+				<div ng-show="arr[1]"> 
+					<p ng-repeat="x in datas.cinemaSign" ng-click="add(x.cinemaSignName)">{{x.cinemaSignName}}</p>
+				</div>
+					<div ng-show="arr[2]">
+					<p ng-repeat="x in datas.hallSign" ng-click="add(x.hallSignName)">{{x.hallSignName}}</p>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="dialogcity" ng-show="showss[3]">
+			<div class="city">
+				<h6>更换城市<span  ng-click="diacityhide()">X</span></h6>
+				<input type="text" class="citys" ng-model="motin" ng-focus="soushow()">
+				<div class="citylist" id="citylist">
+					<div class="scrolls">
+						<div class="presentcity"><span>北京</span><b>&nbsp;当前定位城市</b></div>
+					</div>
+			</div>
+		 <div class="diaindialogs" ng-show="showss[4]">
+			<div class="suo">
+				<input type="text" class="changw">
+				<span ng-click="sohide()">确定</span>
+				<div class="bd">	
+				</div>
+			</div>
+		</div> 
+		</div>

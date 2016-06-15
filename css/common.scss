@@ -1,0 +1,17 @@
+@mixin ups{
+		&:after{
+			content:"";
+			display:inline-block;
+			width:0.7rem;
+			height:0.7rem;
+			border:1px solid #999999;
+			transform:rotate(-135deg);
+			border-left:none;
+			border-top:none;
+			vertical-align: middle;
+			margin-top:0.2rem;
+
+		}
+
+
+}
